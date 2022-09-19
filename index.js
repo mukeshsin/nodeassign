@@ -65,6 +65,28 @@ app.delete('/todo/1', (req, res) => {
 
  });
 
+
+ // start step5 Add Todo by post method
+
+ app.post('/addTodo', (req, res) => {
+    res.send(
+        {
+            title: 'Todo Title',
+            method:'post',
+            id: 1,
+            completed: false
+        }
+    
+        
+);
+    });
+  app.listen(4200, () => {
+    console.log('listening to the port no 4200');
+
+ });
+
+
+
   
 
 
