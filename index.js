@@ -19,3 +19,23 @@ app.listen(2200, () => {
   console.log('listening to the port no 2200');
 
 });
+
+
+
+// start step2 here
+app.get('/todo/1', (req, res) => {
+    res.send({
+        title: 'Todo 1',
+        id: 1,
+        completed: false
+    })
+  });
+
+  app.listen(2500, () => {
+    console.log('listening to the port no 2500');
+ });
+  
+
+
+
+
