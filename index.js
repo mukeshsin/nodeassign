@@ -49,8 +49,21 @@ app.get('/todo/1', (req, res) => {
 });
   app.listen(3000, () => {
     console.log('listening to the port no 3000');
+
  });
 
+
+
+//start step4 Delete todo
+app.delete('/todo/1', (req, res) => {
+    res.send(
+        'Deleted Successfully'
+);
+    });
+  app.listen(3500, () => {
+    console.log('listening to the port no 3500');
+
+ });
 
   
 
