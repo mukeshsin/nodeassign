@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express')
 const app = express()
 
@@ -34,6 +35,23 @@ app.get('/todo/1', (req, res) => {
   app.listen(2500, () => {
     console.log('listening to the port no 2500');
  });
+
+
+ //start step3 update todo. in case of update  website server responding payload and postman  respond updatetodo.alldone 
+ app.put('/todo/1', (req, res) => {
+    res.send(
+        {
+            title: 'Updated Title',
+            id: 1,
+            completed: true
+        }
+    )
+});
+  app.listen(3000, () => {
+    console.log('listening to the port no 3000');
+ });
+
+
   
 
 
